@@ -1,0 +1,154 @@
+body{
+	background-color: linen;
+	font-family: 'Rubik', sans-serif; 
+	font-size: 16px;
+	font-weight: 300;
+	transition: 1.5s;
+}
+
+*,*::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+.cím{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*--Layout--*/
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejléc"
+			"main"
+			"lábléc";
+		grid-template-rows: max-content 1fr max-content;
+		height: justify;
+		min-height: 150vh;
+	}
+	header{
+		background-color: linen;
+		grid-area: fejléc;
+		border-bottom: 1.5px solid white;
+	}
+	main{
+		background-color: linen;
+		grid-area: main;
+		background-image: url("sub2_pics/darkpurplefield.jpg");
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+	}
+	footer{
+		background-color: lightgrey;
+		grid-area: lábléc;
+	}
+/*--Layout_end--*/
+
+/*--General--*/
+	a{
+		text-decoration: none;
+		transition: 0.3s;
+		color: darkslateblue;
+		padding: 5px;
+	}
+	a:hover{
+		font-weight: 1000;
+		font-size: 1.45rem;
+	}
+/*--General_end--*/
+
+/*--common_header*/
+	header{
+		line-height: 2rem;
+		font-size: 22px;
+		padding: 5px;
+	}
+/*--common_header_end*/
+.weboldal{
+	position: absolute;
+	right:1rem;
+	top: 2rem;
+}
+main{
+	font-size: 16px;
+	padding:20px;
+	text-align: center;
+	padding-top: 100px;
+}
+.main{
+	margin:30px;
+	padding: 5px;
+	background-color: linen;
+	border-radius: 20px;
+	line-height: 7rem;
+}
+.details{
+	border-radius: 20px;
+}
+summary{
+	font-size: 30px;
+	
+}
+summary:hover {
+	cursor: pointer;
+	font-size: 32px;
+}
+/*--sulik--*/
+	.iskolák{
+		padding:5px;
+		line-height: 2rem;
+	}
+	.suliképek{
+		display: inline-block;
+		margin: 10px;
+	}
+	#deli{
+		width:100px;
+	}
+	#sacre{
+		width:110px;
+	}
+	#lfgeb{
+		width:140px;
+	}
+	#batyi{
+		width: 140px;
+	}
+	#bmeuni{
+		width:350px;
+	}
+/*--sulik_end--*/
+
+/*footer:*/
+	footer{
+		padding: 5px;
+	}
+	#elérhetőség{
+		text-decoration: underline;
+	}
+	.elérhetőség_menu{
+		padding:15px 50px;
+		margin: 2px;
+		text-align:center;
+		display: inline-block;
+		transition: 1.5s;
+	}
+	.elérhetőség_menu:hover span{
+		cursor: pointer;
+		color: linen;
+	}
+	.elérhetőség_menu:hover {
+		cursor: pointer;
+	}
+	.elérhetőség_menu div{
+		display: none;
+	}
+	.elérhetőség_menu:hover div{
+		display: inline;
+	}
+/*---footer_end--*/
